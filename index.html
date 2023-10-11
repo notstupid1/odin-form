@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="side-panel">
-
+        <div>
+            <p>LOCKSMITH</p>
+        </div>
+        <div>
+            <img src="87_key_house.jpg" alt="logo">
+        </div>
     </div>
     <div class="main-panel">
         <section class="header-section">
@@ -18,7 +24,7 @@
         </section>
         <section class="form-section">
             <p> Let's do this!</p>
-            <form action="" method="get">
+            <form action="" method="get" id="form" onsubmit="return check">
                 <div>
                     <div class="first-name">
                         <label for="first-name">FIRST NAME</label>
@@ -37,18 +43,19 @@
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                     <div class="pass error">
-                        <label for="pass">FIRST NAME</label>
+                        <label for="pass">PASSWORD</label>
                         <input type="password" id="pass" name="pass" required>
                     </div>
                     <div class="confirm-pass error">
-                        <label for="confirm-pass">LAST NAME</label>
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
                         <input type="password" id="confirm-pass" name="confirm-pass" required>
                     </div>
                 </div>
             </form>
         </section>
         <section class="submit-section">
-
+            <button id="btn" type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a> </p>
         </section>
     </div>
 </body>
