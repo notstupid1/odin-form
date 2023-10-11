@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+}
+.side-panel {
+    height: 100vh;
+    background-image: url(./michael-unsplash.jpg);
+    background-size: cover;
+    background-position-x: 75%;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+.main-panel {
+    height: 100vh;
+    background-color: hsl(209, 49%, 16%);
+    flex: 2;
+}
